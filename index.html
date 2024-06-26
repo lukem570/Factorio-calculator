@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<body>
+    <head>
+        <title> Factorio Calculator</title>
+    </head>
+
+    <h1>Factorio Calculator</h1>
+
+    <div>
+        <ul id="list">
+            <li id="item">
+                <label>Name</label>
+                <input type="text">  
+
+                <label>Craft time</label>
+                <input type="text" size="1">
+                <label>per /</label>
+                <input type="text" size="1">
+                <label>sec</label>
+
+                <button onclick="addIngredient(this.parentElement)">add ingredient</button>
+                <button onclick="this.parentElement.remove()">delete</button>
+
+                <b>0</b> assemblers
+
+                <ul id="list">
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
